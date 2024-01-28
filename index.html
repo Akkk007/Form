@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Form</title>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  
+<form action="index.html" method="post">
+<h1>Sign In</h1>
+
+<fieldset>
+  
+<legend class="star">
+<span>1</span>
+Your basic info 
+</legend>
+
+
+<label for="Name">Name:</label>
+<input class="form-control" type="text" id="Name" name="name">
+
+<label for="email">Email:</label>
+<input class="form-control" type="email" id="email" name="email" />
+
+<label for="password">Password:</label>
+<input class="form-control" type="password" id="password" name="password" />
+
+<div>
+  <label>Age:</label>
+  
+  <label>
+    <input type="radio" name="age"/>
+    Under 18
+  </label>
+  
+    <label>
+    <input type="radio" name="age"/>
+    Over 18
+  </label>
+  </div>
+</fieldset>
+  
+<fieldset>
+  
+<legend class="star">
+<span>2</span>
+Your Profile 
+</legend>
+
+<label for="bio">Bio</label>
+<textarea class="form-control" name="bio" id="bio" rows="3"></textarea>
+
+<label for=" ">Job Role:</label>
+<select name="Role" id="role">
+
+<optgroup label="web">
+  
+  <option value="Front-End Developer ">Front-End Developer</option>
+  
+  <option value="PHP Developer">PHP Developer</option>
+
+  <option value="Python Developer ">Python Developer</option>
+
+ <option value="Rails Developer">Rails Developer</option>
+ 
+   <option value="Web designer">Web designer</option>
+
+ <option value="WordPress Developer">WordPress Developer</option>
+
+</optgroup>
+
+<optgroup label="Mobile">
+  <option value="Android Developer">Android Developer</option>
+  <option value="Mobile Designer">Mobile Designer</option>
+  <option value="IOS Developer">IOS Developer</option>
+  
+</optgroup>
+
+<optgroup label="Business">
+  <option value="Business Owner">Business Owner
+  </option>
+  <option value="Freelancer">Freelancer</option>
+</optgroup>
+ </select>
+ 
+ <div>
+   <label>Interests:</label>
+   <label>
+     <input type="checkbox" name="Interest" />
+     Development 
+   </label>
+   
+   <label>
+     <input type="checkbox" name="Interest" />
+     Business
+   </label>
+   
+   <label>
+     <input type="checkbox" name="Interest" />
+     Designer
+   </label>
+ </div>
+</fieldset>
+
+<button>Sign Up</button>
+ 
+ 
+ 
+ 
+</form>
+</body>
+</html>
